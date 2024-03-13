@@ -6,4 +6,6 @@ function callMe(callback, timeInSeconds) {
   }, timeInSeconds * 1000);
 }
 
-callMe(1, 5);
+callMe(() => {
+  console.log("CALLBACK CALLED!!!");
+}, 5);
