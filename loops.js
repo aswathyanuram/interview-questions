@@ -7,6 +7,11 @@ data.forEach((item) => {
   console.log("ITEM IN ARR", item);
 });
 
+PRINT("FOR OF");
+for (let item of data) {
+  console.log("ITEM IN ARR", item);
+}
+
 PRINT("FOR NORMAL");
 for (let i = 0; i < data.length; i++) {
   console.log("ITEM IN ARR", data[i]);
