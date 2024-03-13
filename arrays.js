@@ -1,3 +1,5 @@
+const { PRINT } = require("./helper");
+
 const data = [1, 2, 3, 4, 5];
 
 let doubled = data.map((item) => {
@@ -19,10 +21,10 @@ let joinedArr = data.join("-|-");
 
 let slicedArray = data.slice(0, 2);
 
-console.log("INITIAL DATA", data);
-console.log("DOUBLED DATA", doubled);
-console.log("FILTERED EVEN DATA", filteredEven);
-console.log("DATA FIND", dataFind);
-console.log("CONCAT RESULT", data, newArr);
-console.log("JOINED ARRAY", joinedArr);
-console.log("SLICED ARRAY", slicedArray);
+PRINT("INITIAL DATA", data);
+PRINT("DOUBLED DATA", doubled);
+PRINT("FILTERED EVEN DATA", filteredEven);
+PRINT("DATA FIND", dataFind);
+PRINT("CONCAT RESULT", data, newArr);
+PRINT("JOINED ARRAY", joinedArr);
+PRINT("SLICED ARRAY", slicedArray);
