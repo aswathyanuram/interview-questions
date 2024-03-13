@@ -1,3 +1,5 @@
+//Example for Closure
+
 function logger(type) {
   let date = new Date().toUTCString();
   return function (data) {
