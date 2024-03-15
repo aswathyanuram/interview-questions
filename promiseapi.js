@@ -14,3 +14,17 @@ promise
   .catch((error) => {
     console.log("Error:", error);
   });
+
+//Axios PROMISE LOGIC
+const axios = require("axios");
+let url = "https://dummyjson.com/products";
+
+axios
+  .get(url)
+  .then((response) => {
+    let data = response.data;
+    console.log("AXIOS PROMISE:", data[0]);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
